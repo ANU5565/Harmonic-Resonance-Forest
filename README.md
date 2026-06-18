@@ -11,6 +11,21 @@
 
 ⚠️ Project Status: This repository contains published research (DOI: 10.5281/zenodo.18173940). All contributions must pass rigorous testing to ensure the 98.84% accuracy benchmark is maintained. Please read CONTRIBUTING.md before opening an issue.
 
+
+---
+
+## 💖 GSSoC 2026 Contribution
+
+This project is part of **GirlScript Summer of Code 2026 (GSSoC'26)**.
+
+We welcome meaningful contributions across:
+- Documentation
+- Research validation
+- Code improvements
+
+> ⚠️ Note: This is a research-grade repository. All PRs must maintain scientific rigor and performance benchmarks.
+
+
 ---
 
 ##  Research Advancement
@@ -69,7 +84,15 @@ The advancement is the **synthesis**: treating classification as a physical wave
 
 ---
 
+## Quick Start
+For a minimal example of how to use the Harmonic Resonance Classifier, check out the [basic_usage.py](examples/basic_usage.py) script.
+
+```bash
+python examples/basic_usage.py
+
 ### Final Proof of Generalization & Neuro-Stability (v15.0)
+
+---
 
 To move beyond simple accuracy, HRF v15.0 was subjected to a **5-Fold Stratified Cross-Validation** and a full battery of statistical tests on the OpenML 1471 (EEG Eye State) corpus.
 

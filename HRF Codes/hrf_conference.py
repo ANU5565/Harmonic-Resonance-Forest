@@ -292,7 +292,7 @@ if __name__ == "__main__":
         # Optional: Add XGBoost if available
         try:
             from xgboost import XGBClassifier
-            models["XGBoost (SOTA)"] = XGBClassifier(n_estimators=100, eval_metric='logloss', use_label_encoder=False)
+            models["XGBoost (SOTA)"] = XGBClassifier(n_estimators=100, eval_metric='logloss')
         except ImportError:
             print("[WARN] XGBoost not found. Skipping comparison.")
 
@@ -501,9 +501,14 @@ def run_neural_perturbation_test():
 
     try:
         from xgboost import XGBClassifier
+<<<<<<< HEAD
         competitors["XGBoost"] = XGBClassifier(n_estimators=100, use_label_encoder=False, eval_metric='logloss')
     except ImportError:
         pass
+=======
+        competitors["XGBoost"] = XGBClassifier(n_estimators=100, eval_metric='logloss')
+    except ImportError: pass
+>>>>>>> 7ee3eda9e2acdd98eca49a2c79f54a704bdf3b29
 
     print(f"\n{'Model Name':<30} | {'Accuracy':<10} | {'Status'}")
     print("-" * 60)
